@@ -1,5 +1,5 @@
-import { Container } from './styles';
-import { Profile } from './styles';
+import { RiShutDownLine } from 'react-icons/ri';
+import { Container, Profile, Logout } from './styles';
 
 export function Header(){
     return (
@@ -10,10 +10,13 @@ export function Header(){
                     alt="Foto do Usuário" 
                 />
                 <div>
-                    <span>Bem vindo,</span>
+                    <span>Bem vindo!</span>
                     <strong>Rogério Lins</strong>
-                </div>
+                </div>                
             </Profile>
+            <Logout>
+                <RiShutDownLine />
+            </Logout>
 
         </Container>
     );
